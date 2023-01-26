@@ -1,4 +1,4 @@
-package applicatie;
+package backEndApplicatie;
 
 import dp_ChainofResponsibility.PaymentDemo;
 import dp_composite.BetalingMedewerkers;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class Applicatie {
+public class BackEndApp {
     public static void close() throws InterruptedException {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
         Thread.sleep(100);
