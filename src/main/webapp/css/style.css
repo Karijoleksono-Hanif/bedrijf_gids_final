@@ -6,7 +6,7 @@ Contact = mjmarazbd@gmail.com
 WhatsApp = +8801869944607
 Facebook = mjmarazbd 
 */
-* {
+/* * {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -149,11 +149,11 @@ p {
 
 .mtb-15 {
     margin: 15px 0;
-}
+} */
 
 
 /* ==== Scoll  = Start ===== */
-.totop {
+/* .totop {
     position: fixed;
     bottom: 0px;
     right: 10px;
@@ -174,7 +174,7 @@ p {
     color: #fff;
     background: #194274;
     text-shadow: 0 0 5px #000;
-}
+} */
 
 /* ==== Scoll  = End ===== */
 
@@ -207,9 +207,6 @@ p {
 
 
 
-
-
-
 /* ==== Data table  = Start ===== */
 
 .data_table{
@@ -229,8 +226,17 @@ p {
 /* ==== Data table  = End  ===== */
 
 
+/* body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  } */
 
 
+
+ 
 
 
 
