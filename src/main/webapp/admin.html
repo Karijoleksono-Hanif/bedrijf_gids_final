@@ -11,6 +11,7 @@
     <link href="assets/Suriname.png" rel="icon">
     <title>Admin</title>
 </head>
+
 <body>
     <div class="navbar">
         <a href="index.html">
@@ -20,53 +21,84 @@
         <a href="index.html">
             <button>HOME</button>
         </a>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <input type="text" class="form-control" placeholder="Normal input"> <br>
+                  <input type="text" class="form-control" placeholder="Normal input"> <br>
+                  <input type="text" class="form-control" placeholder="Normal input"> <br>
+                  <input type="text" class="form-control" placeholder="Normal input"> <br>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                  <input class="btn btn-primary" type="submit" value="Submit">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search">
+      <button class="btn btn-success" type="submit">Go</button>
     </div>
 
 
-    
-</div>
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Search">
-  <button class="btn btn-success" type="submit">Go</button>
-</div>
-</div>
-
     <div class="container">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-          Open modal
+          new data
         </button>
-      </div>
-      
-      <!-- The Modal -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                <input type="text" class="form-control" placeholder="Normal input"> <br>
-                <input type="text" class="form-control" placeholder="Normal input"> <br>
-                <input type="text" class="form-control" placeholder="Normal input"> <br>
-                <input type="text" class="form-control" placeholder="Normal input"> <br>
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <input class="btn btn-primary" type="submit" value="Submit">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            </div>
-      
+    </div>
+        
+
+
+  
+      <br><br><br>
+      <div class="container" >
+          <h2>Table</h2>
+          <div class="data_table">          
+          <table table id="example" class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+              <TR class="shadow p-3 mb-3 bg-white rounded">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                  <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                  <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+              </td>
+              </tr>
+            </tbody>
+          </table>
           </div>
         </div>
-      </div>
 
-        </div>
-      </div>
+
+
+        <script src="js/script.js"></script>
 </body>
 </html>
