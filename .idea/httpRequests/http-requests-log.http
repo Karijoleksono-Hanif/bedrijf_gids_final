@@ -1,0 +1,45 @@
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205642.200.txt
+
+###
+
+GET http://localhost:8080/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205634.404.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205459.200.txt
+
+###
+
+GET http://localhost:8080/rest/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T133056.404.html
+
+###
+
+GET http://localhost:8080/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T132950.404.html
+
+###
+
