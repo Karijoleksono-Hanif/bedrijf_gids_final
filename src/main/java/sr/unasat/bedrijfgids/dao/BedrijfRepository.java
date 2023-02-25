@@ -1,17 +1,23 @@
-package sr.unasat.bedrijfgids.repository;
+package sr.unasat.bedrijfgids.dao;
 
+import jakarta.persistence.EntityTransaction;
+import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
 import sr.unasat.bedrijfgids.entity.Bedrijf;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 public class BedrijfRepository {
+    private EntityManager entityManager = JPAConfiguration.getEntityManager();
+    private EntityTransaction transaction = entityManager.getTransaction();
 
-    private EntityManager entityManager;
 
-    public  BedrijfRepository(EntityManager entityManager) {
-        this.entityManager = entityManager;
+
+    private EntityManager entityManagerPersistence;
+
+    public BedrijfRepository(EntityManager entityManager) {
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {

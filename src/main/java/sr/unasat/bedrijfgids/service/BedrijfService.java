@@ -1,9 +1,9 @@
 package sr.unasat.bedrijfgids.service;
 
-
+import jakarta.persistence.EntityManager;
 import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
+import sr.unasat.bedrijfgids.dao.BedrijfRepository;
 import sr.unasat.bedrijfgids.entity.Bedrijf;
-import sr.unasat.bedrijfgids.repository.BedrijfRepository;
 
 import java.util.List;
 
@@ -11,10 +11,11 @@ import java.util.List;
 
 public class BedrijfService {
 
-    private final BedrijfRepository bedrijfRepository;
-    public BedrijfService() {
-        this.bedrijfRepository = new BedrijfRepository(JPAConfiguration.getEntityManager());
-    }
+
+    private BedrijfRepository bedrijfRepository = new BedrijfRepository();
+    private EntityManager entityManager = JPAConfiguration.getEntityManager();
+
+
     public List<Bedrijf> readBedrijven() {
         return bedrijfRepository.readBedrijven();
     }

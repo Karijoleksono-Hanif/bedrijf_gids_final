@@ -2,7 +2,7 @@ package sr.unasat.bedrijfgids.service;
 
 import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
 import sr.unasat.bedrijfgids.entity.MediaFiles;
-import sr.unasat.bedrijfgids.repository.MediaFilesRepository;
+import sr.unasat.bedrijfgids.dao.MediaFilesRepository;
 
 import java.util.List;
 

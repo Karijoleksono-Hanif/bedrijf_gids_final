@@ -1,4 +1,4 @@
-package sr.unasat.bedrijfgids.repository;
+package sr.unasat.bedrijfgids.dao;
 
 import sr.unasat.bedrijfgids.entity.MediaFiles;
 import jakarta.persistence.EntityManager;
