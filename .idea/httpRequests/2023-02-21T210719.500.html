@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">body {
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    h1, h2, h3, b {
+        color: white;
+        background-color: #525D76;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> javax.enterprise.inject.CreationException</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>javax.servlet.ServletException: javax.enterprise.inject.CreationException
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:410)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:366)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:319)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>javax.enterprise.inject.CreationException
+	java.base&#47;jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	java.base&#47;java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	java.base&#47;java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	java.base&#47;jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	java.base&#47;java.lang.Class.newInstance(Class.java:677)
+	org.jboss.weld.security.NewInstanceAction.run(NewInstanceAction.java:33)
+	java.base&#47;java.security.AccessController.doPrivileged(AccessController.java:569)
+	org.jboss.weld.injection.Exceptions.rethrowException(Exceptions.java:40)
+	org.jboss.weld.injection.Exceptions.rethrowException(Exceptions.java:50)
+	org.jboss.weld.injection.Exceptions.rethrowException(Exceptions.java:90)
+	org.jboss.weld.injection.ConstructorInjectionPoint.newInstance(ConstructorInjectionPoint.java:127)
+	org.jboss.weld.injection.ConstructorInjectionPoint.invokeAroundConstructCallbacks(ConstructorInjectionPoint.java:92)
+	org.jboss.weld.injection.ConstructorInjectionPoint.newInstance(ConstructorInjectionPoint.java:78)
+	org.jboss.weld.injection.producer.AbstractInstantiator.newInstance(AbstractInstantiator.java:28)
+	org.jboss.weld.injection.producer.BasicInjectionTarget.produce(BasicInjectionTarget.java:112)
+	org.glassfish.jersey.inject.cdi.se.bean.ClassBean.create(ClassBean.java:96)
+	org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	sr.unasat.bedrijfgids.controller.BedrijfController$Proxy$_$$_WeldClientProxy.findAll(Unknown Source)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:577)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:366)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:319)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.ExceptionInInitializerError
+	sr.unasat.bedrijfgids.service.BedrijfService.&lt;init&gt;(BedrijfService.java:16)
+	sr.unasat.bedrijfgids.controller.BedrijfController.&lt;init&gt;(BedrijfController.java:14)
+	java.base&#47;jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	java.base&#47;java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	java.base&#47;java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	org.jboss.weld.injection.ConstructorInjectionPoint.newInstance(ConstructorInjectionPoint.java:119)
+	org.jboss.weld.injection.ConstructorInjectionPoint.invokeAroundConstructCallbacks(ConstructorInjectionPoint.java:92)
+	org.jboss.weld.injection.ConstructorInjectionPoint.newInstance(ConstructorInjectionPoint.java:78)
+	org.jboss.weld.injection.producer.AbstractInstantiator.newInstance(AbstractInstantiator.java:28)
+	org.jboss.weld.injection.producer.BasicInjectionTarget.produce(BasicInjectionTarget.java:112)
+	org.glassfish.jersey.inject.cdi.se.bean.ClassBean.create(ClassBean.java:96)
+	org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	sr.unasat.bedrijfgids.controller.BedrijfController$Proxy$_$$_WeldClientProxy.findAll(Unknown Source)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:577)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:366)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:319)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>jakarta.persistence.PersistenceException: No Persistence provider for EntityManager named bedrijfgids_persistence
+	jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:86)
+	jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	sr.unasat.bedrijfgids.configuration.JPAConfiguration.&lt;clinit&gt;(JPAConfiguration.java:10)
+	sr.unasat.bedrijfgids.service.BedrijfService.&lt;init&gt;(BedrijfService.java:16)
+	sr.unasat.bedrijfgids.controller.BedrijfController.&lt;init&gt;(BedrijfController.java:14)
+	java.base&#47;jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	java.base&#47;java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	java.base&#47;java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	org.jboss.weld.injection.ConstructorInjectionPoint.newInstance(ConstructorInjectionPoint.java:119)
+	org.jboss.weld.injection.ConstructorInjectionPoint.invokeAroundConstructCallbacks(ConstructorInjectionPoint.java:92)
+	org.jboss.weld.injection.ConstructorInjectionPoint.newInstance(ConstructorInjectionPoint.java:78)
+	org.jboss.weld.injection.producer.AbstractInstantiator.newInstance(AbstractInstantiator.java:28)
+	org.jboss.weld.injection.producer.BasicInjectionTarget.produce(BasicInjectionTarget.java:112)
+	org.glassfish.jersey.inject.cdi.se.bean.ClassBean.create(ClassBean.java:96)
+	org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	sr.unasat.bedrijfgids.controller.BedrijfController$Proxy$_$$_WeldClientProxy.findAll(Unknown Source)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:577)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:366)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:319)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.71</h3></body>
+</html>
