@@ -11,12 +11,11 @@ import java.util.List;
 public class BedrijfRepository {
     private EntityManager entityManager = JPAConfiguration.getEntityManager();
     private EntityTransaction transaction = entityManager.getTransaction();
-
-
-
     private EntityManager entityManagerPersistence;
 
+
     public BedrijfRepository(EntityManager entityManager) {
+        this.entityManager =entityManager;
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {
