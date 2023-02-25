@@ -1,27 +1,28 @@
-package sr.unasat.bedrijfgids.dao;
+package sr.unasat.bedrijfgids.repository;
 
-import sr.unasat.bedrijfgids.entity.Entiteit;
+import sr.unasat.bedrijfgids.entity.Filialen;
 import jakarta.persistence.EntityManager;
 
-public class EntiteitRepository {
+public class FilialenRepository {
 
     private EntityManager entityManager;
 
-    public EntiteitRepository(EntityManager entityManager) {
+    public  FilialenRepository(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
 
-    public Entiteit createEntiteit(Entiteit entiteit) {
+    public Filialen createFilialen(Filialen filialen) {
         try {
             entityManager.getTransaction().begin();
-            entityManager.persist(entiteit);
+            entityManager.persist(filialen);
             entityManager.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
             entityManager.getTransaction().rollback();
         }
-        return entiteit;
+        return filialen;
     }
+
 }
 
 

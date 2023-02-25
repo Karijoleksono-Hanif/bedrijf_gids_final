@@ -2,7 +2,7 @@ package sr.unasat.bedrijfgids.service;
 
 import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
 import sr.unasat.bedrijfgids.entity.Industrie;
-import sr.unasat.bedrijfgids.dao.IndustrieRepository;
+import sr.unasat.bedrijfgids.repository.IndustrieRepository;
 
 public class IndustrieService {
     private IndustrieRepository industrieRepository;
