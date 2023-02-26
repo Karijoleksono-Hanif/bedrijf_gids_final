@@ -1,0 +1,261 @@
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/getAll
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T145510.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T145507.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/getAll
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T144652.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T144649.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/getAll
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T143258.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T143207.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T120514.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T120316.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T120240.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T113335.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T113327.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T113205.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T111709.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T111612.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T111534.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-25T111505.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/list
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T211643.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T211637.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/list
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T211633.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/list
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T210728.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T210725.200.txt
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/list
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T210719.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/list
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T210442.500.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/bedrijf/list
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205927.404.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205642.200.txt
+
+###
+
+GET http://localhost:8080/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205634.404.html
+
+###
+
+GET http://localhost:8080/bedrijfgids_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T205459.200.txt
+
+###
+
+GET http://localhost:8080/rest/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T133056.404.html
+
+###
+
+GET http://localhost:8080/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-02-21T132950.404.html
+
+###
+
