@@ -6,7 +6,6 @@ import sr.unasat.bedrijfgids.entity.Bedrijf;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 public class BedrijfRepository {
@@ -17,7 +16,7 @@ public class BedrijfRepository {
 
     private EntityManager entityManagerPersistence;
 
-    public BedrijfRepository(EntityManager entityManager) {
+    public BedrijfRepository() {
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {
