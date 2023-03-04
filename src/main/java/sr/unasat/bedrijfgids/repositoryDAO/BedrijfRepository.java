@@ -1,4 +1,4 @@
-package sr.unasat.bedrijfgids.dao;
+package sr.unasat.bedrijfgids.repositoryDAO;
 
 import jakarta.persistence.EntityTransaction;
 import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
@@ -16,7 +16,7 @@ public class BedrijfRepository {
 
     private EntityManager entityManagerPersistence;
 
-    public BedrijfRepository() {
+    public BedrijfRepository(EntityManager entityManager) {
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {

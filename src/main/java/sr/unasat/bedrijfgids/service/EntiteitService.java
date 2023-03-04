@@ -3,7 +3,7 @@ package sr.unasat.bedrijfgids.service;
 
 import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
 import sr.unasat.bedrijfgids.entity.Entiteit;
-import sr.unasat.bedrijfgids.repository.EntiteitRepository;
+import sr.unasat.bedrijfgids.repositoryDAO.EntiteitRepository;
 
 public class EntiteitService {
     private EntiteitRepository entiteitRepository;

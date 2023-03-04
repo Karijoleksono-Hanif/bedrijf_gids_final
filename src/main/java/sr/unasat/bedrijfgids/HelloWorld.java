@@ -10,7 +10,7 @@ public class HelloWorld {
     @GET
     @Produces("text/plain")
     public String hello() {
-        return "Hello, World!";
+        return "Hello, World! hi dit is een update test";
 
     }
 }

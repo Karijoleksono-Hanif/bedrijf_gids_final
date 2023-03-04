@@ -1,4 +1,4 @@
-package sr.unasat.bedrijfgids.repository;
+package sr.unasat.bedrijfgids.repositoryDAO;
 
 import sr.unasat.bedrijfgids.entity.Entiteit;
 import jakarta.persistence.EntityManager;

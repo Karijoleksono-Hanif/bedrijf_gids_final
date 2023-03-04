@@ -2,7 +2,7 @@ package sr.unasat.bedrijfgids.service;
 
 
 import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
-import sr.unasat.bedrijfgids.repository.BedrijfRepository;
+import sr.unasat.bedrijfgids.repositoryDAO.BedrijfRepository;
 import sr.unasat.bedrijfgids.entity.Bedrijf;
 
 import java.util.List;
