@@ -41,4 +41,8 @@ public class AlienRepository {
         return null;
     }
 
+    public void create(Alien a1){
+        aliens.add(a1);
+    }
+
 }

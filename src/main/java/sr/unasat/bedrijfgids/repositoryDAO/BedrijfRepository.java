@@ -9,14 +9,11 @@ import jakarta.persistence.TypedQuery;
 import java.util.List;
 
 public class BedrijfRepository {
-    private EntityManager entityManager = JPAConfiguration.getEntityManager();
-    private EntityTransaction transaction = entityManager.getTransaction();
 
-
-
-    private EntityManager entityManagerPersistence;
+    public EntityManager entityManager;
 
     public BedrijfRepository(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {
@@ -31,10 +28,18 @@ public class BedrijfRepository {
         return bedrijf;
     }
 
+//    public List<Bedrijf> readBedrijven() {
+//        String query = "select b from Bedrijf b";
+//        TypedQuery<Bedrijf> typedQuery = entityManager.createQuery(query, Bedrijf.class);
+//        List<Bedrijf> b = typedQuery.getResultList();
+//        return b;
+//    }
+
     public List<Bedrijf> readBedrijven() {
         String query = "select b from Bedrijf b";
         TypedQuery<Bedrijf> typedQuery = entityManager.createQuery(query, Bedrijf.class);
         List<Bedrijf> b = typedQuery.getResultList();
+//        entityManager.getTransaction().commit();
         return b;
     }
 

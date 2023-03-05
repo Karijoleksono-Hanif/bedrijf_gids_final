@@ -6,6 +6,16 @@ public class Alien {
     private String name;
     private int points;
 
+
+    @Override
+    public String toString() {
+        return "Alien{" +
+                "Id=" + Id +
+                ", name='" + name + '\'' +
+                ", points=" + points +
+                '}';
+    }
+
     public int getId() {
         return Id;
     }
