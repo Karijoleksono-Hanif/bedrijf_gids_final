@@ -1,22 +1,19 @@
 package sr.unasat.bedrijfgids.repositoryDAO;
 
-import jakarta.persistence.EntityTransaction;
-import sr.unasat.bedrijfgids.configuration.JPAConfiguration;
-import sr.unasat.bedrijfgids.entity.Bedrijf;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
+import sr.unasat.bedrijfgids.entity.Bedrijf;
+
 
 import java.util.List;
 
 public class BedrijfRepository {
-    private EntityManager entityManager = JPAConfiguration.getEntityManager();
-    private EntityTransaction transaction = entityManager.getTransaction();
 
-
-
-    private EntityManager entityManagerPersistence;
+    public EntityManager entityManager;
 
     public BedrijfRepository(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 
     public Bedrijf createBedrijf(Bedrijf bedrijf) {
@@ -31,10 +28,18 @@ public class BedrijfRepository {
         return bedrijf;
     }
 
+//    public List<Bedrijf> readBedrijven() {
+//        String query = "select b from Bedrijf b";
+//        TypedQuery<Bedrijf> typedQuery = entityManager.createQuery(query, Bedrijf.class);
+//        List<Bedrijf> b = typedQuery.getResultList();
+//        return b;
+//    }
+
     public List<Bedrijf> readBedrijven() {
         String query = "select b from Bedrijf b";
         TypedQuery<Bedrijf> typedQuery = entityManager.createQuery(query, Bedrijf.class);
         List<Bedrijf> b = typedQuery.getResultList();
+//        entityManager.getTransaction().commit();
         return b;
     }
 

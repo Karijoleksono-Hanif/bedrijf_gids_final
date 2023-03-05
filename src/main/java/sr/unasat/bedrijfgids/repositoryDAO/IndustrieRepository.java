@@ -1,7 +1,9 @@
 package sr.unasat.bedrijfgids.repositoryDAO;
 
-import sr.unasat.bedrijfgids.entity.Industrie;
 import jakarta.persistence.EntityManager;
+import sr.unasat.bedrijfgids.entity.Industrie;
+
+
 
 public class IndustrieRepository {
 

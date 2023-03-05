@@ -17,21 +17,4 @@
         <servlet-name>Jersey REST Service</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
-
-<!--    <servlet>-->
-<!--        <servlet-name>Jersey REST Service</servlet-name>-->
-<!--        <servlet-class>sr.unasat.bedrijfgids.AddServlet</servlet-class>-->
-<!--        &lt;!&ndash; Register resources and providers under com.vogella.jersey.first package. &ndash;&gt;-->
-<!--        <init-param>-->
-<!--            <param-name>jersey.config.server.provider.packages</param-name>-->
-<!--            <param-value>sr.unasat.bedrijfgidsrest</param-value>-->
-<!--        </init-param>-->
-<!--        <load-on-startup>1</load-on-startup>-->
-<!--    </servlet>-->
-
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>Jersey REST Service</servlet-name>-->
-<!--        <url-pattern>/add</url-pattern>-->
-<!--    </servlet-mapping>-->
-
 </web-app>

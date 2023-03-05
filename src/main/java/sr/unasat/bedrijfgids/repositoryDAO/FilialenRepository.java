@@ -1,7 +1,10 @@
 package sr.unasat.bedrijfgids.repositoryDAO;
 
-import sr.unasat.bedrijfgids.entity.Filialen;
 import jakarta.persistence.EntityManager;
+import sr.unasat.bedrijfgids.entity.Filialen;
+
+
+
 
 public class FilialenRepository {
 

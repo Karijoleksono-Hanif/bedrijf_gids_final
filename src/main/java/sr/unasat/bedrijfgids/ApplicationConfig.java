@@ -1,7 +1,10 @@
 package sr.unasat.bedrijfgids;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
+
+
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +14,7 @@ public class ApplicationConfig extends Application {
     public Map<String, Object> getProperties() {
         Map<String, Object> properties = new HashMap<String, Object>();
         properties.put("jersey.config.server.provider.packages", "sr.unasat.bedrijfgids.controller");
+
         return properties;
     }
 
