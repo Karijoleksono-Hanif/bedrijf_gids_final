@@ -4,7 +4,10 @@
     outline: 0;
 }
 
-
+input[type="text"] {
+    width: 200px; /* set the width */
+    height: 30px; /* set the height */
+  }
 
 .navbar{
     background: #0c1e2e;

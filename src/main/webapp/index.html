@@ -21,25 +21,43 @@
           <a href="admin.html">
               <button>ADMIN</button>
           </a>
-   </div>
+    </div>
+    
 
    <br><br><br><br>
+  <div class="container">
+    <div class="border">
+      <div>
+        <form>
+          <input type="text" id="my-text-box" name="name" placeholder="bedrijf naam">
+          <input type="text" id="my-text-box" name="name" placeholder="name">
+          <div class="dropdown">
 
-    <div>
-        <form action="add" method="post">
-
-            Enter 1st number : <input type="text" name="num1"><br>
-            Enter 2nd number : <input type="text" name="num2"><br>
-            <input type="submit">
-
+          </div>
         </form>
-    </div>
+      </div>
+     </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+
+  <form action="add" method="post">
+    Enter 1st number : <input type="text" name="num1"><br>
+    Enter 2nd number : <input type="text" name="num2"><br>
+    <input type="submit">
+  </form>
 
 
     <div class="container" >
         
         <h2>Table</h2>
-        
         <div class="data_table">          
         <table table id="example" class="table table-striped table-bordered">
           <thead>
@@ -55,7 +73,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-          </
+          
             </tr>
           </tbody>
         </table>
