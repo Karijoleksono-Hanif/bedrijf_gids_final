@@ -6,19 +6,15 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import sr.unasat.bedrijfgids.entity.Bedrijf;
 import sr.unasat.bedrijfgids.service.BedrijfService;
-
-
 import java.util.List;
 
 @Path("bedrijven")
 public class BedrijfController {
 
     private final BedrijfService bedrijfService = new BedrijfService();
-
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Bedrijf> readBedrijven(){
-//                JPAConfig.getEntityManager();
         System.out.println("getBedrijven called....");
 
         return bedrijfService.readBedrijven();

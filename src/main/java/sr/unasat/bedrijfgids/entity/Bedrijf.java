@@ -1,12 +1,9 @@
 package sr.unasat.bedrijfgids.entity;
 
-
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
-
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,17 +16,29 @@ public class Bedrijf {
     private String bedrijf_naam;
     private String email_adress;
 
+    @JsonIgnore
     @OneToOne(cascade = CascadeType.ALL)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private MediaFiles mediaFiles;
 
+    @JsonIgnore
     @ManyToOne(cascade = CascadeType.ALL)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Entiteit entiteit;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "bedrijfs", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @OnDelete(action = OnDeleteAction.CASCADE)
     protected Set<Industrie> industries = new HashSet<>();
+
+    @Override
+    public String toString() {
+        return "Bedrijven{" +
+                "Id=" + id +
+                ", bedrijfNaam='" + bedrijf_naam + '\'' +
+                ", emailAdress=" + email_adress +
+                '}';
+    }
 
     public Long getId() {
         return id;

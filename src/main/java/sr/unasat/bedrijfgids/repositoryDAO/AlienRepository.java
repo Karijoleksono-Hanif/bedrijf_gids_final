@@ -1,7 +1,6 @@
 package sr.unasat.bedrijfgids.repositoryDAO;
 
 import sr.unasat.bedrijfgids.Alien;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-fetch("https://fakestoreapi.com/products").then((data)=>{
+fetch("http://localhost:8080/bedrijfgids_war/api/bedrijven").then((data)=>{
     // console.log(data);
     return data.json();
 }).then((objectData)=>{
@@ -7,10 +7,9 @@ fetch("https://fakestoreapi.com/products").then((data)=>{
     objectData.map((values)=>{
         tableData+=
         `<tr>
-            <td>${values.title}</td>
-            <td>${values.description}</td>
-            <td>${values.price}</td>
-            <td>${values.price}</td>
+            <td>${values.id}</td>
+            <td>${values.bedrijf_naam}</td>
+            <td>${values.email_adress}</td>
         </tr>`;
     });
     document.getElementById("table_body").innerHTML=tableData;

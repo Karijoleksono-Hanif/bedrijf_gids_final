@@ -6,9 +6,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import sr.unasat.bedrijfgids.Alien;
-import sr.unasat.bedrijfgids.entity.Bedrijf;
 import sr.unasat.bedrijfgids.repositoryDAO.AlienRepository;
-import sr.unasat.bedrijfgids.repositoryDAO.BedrijvenRepository;
 
 
 import java.util.List;

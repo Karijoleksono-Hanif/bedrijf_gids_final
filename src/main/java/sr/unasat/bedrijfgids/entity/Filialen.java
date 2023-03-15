@@ -1,9 +1,7 @@
 package sr.unasat.bedrijfgids.entity;
 
-
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
-
 import jakarta.persistence.*;
 
 @Entity
