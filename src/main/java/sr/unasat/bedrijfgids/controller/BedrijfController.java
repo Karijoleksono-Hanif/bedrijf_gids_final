@@ -13,6 +13,7 @@ public class BedrijfController {
 
     private final BedrijfService bedrijfService = new BedrijfService();
     @GET
+    @Path("/getAll")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Bedrijf> readBedrijven(){
         System.out.println("getBedrijven called....");
