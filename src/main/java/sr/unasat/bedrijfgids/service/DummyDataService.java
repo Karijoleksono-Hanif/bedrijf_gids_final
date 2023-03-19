@@ -66,31 +66,53 @@ public class DummyDataService {
         Bedrijf bedrijf2 = new Bedrijf();
         Bedrijf bedrijf3 = new Bedrijf();
         Bedrijf bedrijf4 = new Bedrijf();
+        Bedrijf bedrijf5 = new Bedrijf();
 
         bedrijf1.setBedrijf_naam("HSDS");
+        bedrijf1.setFiliaal("HSDS Noord");
+        bedrijf1.setFiliaal_adress("Ringweg Noord 36");
         bedrijf1.setEmail_adress("costumer@hsds.sr");
+        bedrijf1.setTelefoon_nummer("+597 545326");
         bedrijf1.setEntiteit(zaak1);
         bedrijf1.setMediaFiles(mediaFiles1);
 
-        bedrijf2.setBedrijf_naam("CHS");
-        bedrijf2.setEmail_adress("costumer@chs.sr");
+        bedrijf2.setBedrijf_naam("HSDS");
+        bedrijf2.setFiliaal("HSDS Wanica");
+        bedrijf2.setFiliaal_adress("Indira Ghandiweg 773");
+        bedrijf2.setEmail_adress("costumer@hsds.sr");
+        bedrijf2.setTelefoon_nummer("+597 545286");
         bedrijf2.setEntiteit(zaak1);
-        bedrijf2.setMediaFiles(mediaFiles2);
+        bedrijf2.setMediaFiles(mediaFiles1);
 
-        bedrijf3.setBedrijf_naam("TELESUR");
-        bedrijf3.setEmail_adress("costumer@telesur.sr");
+        bedrijf3.setBedrijf_naam("CHS");
+        bedrijf3.setFiliaal("CHS Wanica");
+        bedrijf3.setFiliaal_adress("chswanicastraat");
+        bedrijf3.setEmail_adress("costumer@chs.sr");
+        bedrijf3.setTelefoon_nummer("+597 123");
         bedrijf3.setEntiteit(zaak1);
-        bedrijf3.setMediaFiles(mediaFiles3);
+        bedrijf3.setMediaFiles(mediaFiles2);
 
-        bedrijf4.setBedrijf_naam("DIGICEL");
-        bedrijf4.setEmail_adress("costumer@digicel.sr");
+        bedrijf4.setBedrijf_naam("TELESUR");
+        bedrijf4.setFiliaal("TELESUR Wanica");
+        bedrijf4.setFiliaal_adress("telesurwanicastraat");
+        bedrijf4.setEmail_adress("costumer@telesur.sr");
+        bedrijf4.setTelefoon_nummer("+597 69596");
         bedrijf4.setEntiteit(zaak1);
-        bedrijf4.setMediaFiles(mediaFiles4);
+        bedrijf4.setMediaFiles(mediaFiles3);
+
+        bedrijf5.setBedrijf_naam("DIGICEL");
+        bedrijf5.setFiliaal("DIGICEL Wanica");
+        bedrijf5.setFiliaal_adress("digicelwanicastraat");
+        bedrijf5.setEmail_adress("costumer@digicel.sr");
+        bedrijf5.setTelefoon_nummer("+597 5454158748");
+        bedrijf5.setEntiteit(zaak1);
+        bedrijf5.setMediaFiles(mediaFiles4);
 
         bedrijfService.createBedrijf(bedrijf1);
         bedrijfService.createBedrijf(bedrijf2);
         bedrijfService.createBedrijf(bedrijf3);
         bedrijfService.createBedrijf(bedrijf4);
+        bedrijfService.createBedrijf(bedrijf5);
 
     //__Create Join table Bedrijven_Industrie
         bedrijf1.getIndustries().add(industrie2);

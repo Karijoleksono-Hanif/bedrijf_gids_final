@@ -25,6 +25,13 @@ public class BedrijfRepository {
         return bedrijf;
     }
 
+    public Bedrijf insertBedrijf(Bedrijf bedrijf){
+        entityManager.getTransaction().begin();
+        entityManager.persist(bedrijf);
+        entityManager.getTransaction().commit();
+        return bedrijf;
+    }
+
 
     public List<Bedrijf> readBedrijven() {
         String query = "select b from Bedrijf b";
