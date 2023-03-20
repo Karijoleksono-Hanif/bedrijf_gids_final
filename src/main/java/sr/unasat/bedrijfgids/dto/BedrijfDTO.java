@@ -1,6 +1,6 @@
 package sr.unasat.bedrijfgids.dto;
 
-import jakarta.validation.constraints.Email;
+
 
 public class BedrijfDTO {
     private Long id;

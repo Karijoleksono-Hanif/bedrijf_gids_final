@@ -30,8 +30,6 @@ public class BedrijfService {
         Bedrijf bedrijf = new Bedrijf();
 
         try {
-
-
             bedrijf.setBedrijf_naam(bedrijfDTO.getBedrijf_naam());
             bedrijf.setFiliaal(bedrijfDTO.getFiliaal());
             bedrijf.setFiliaal_adress(bedrijfDTO.getFiliaal_adress());

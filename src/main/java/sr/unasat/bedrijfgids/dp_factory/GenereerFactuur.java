@@ -6,28 +6,6 @@ import java.io.InputStreamReader;
 
   public class GenereerFactuur {
 
-      private String plan;
-      private Integer maanden;
-
-      public String getPlan() {
-          return plan;
-      }
-
-      public void setPlan(String plan) {
-          this.plan = plan;
-      }
-
-      public Integer getMaanden() {
-          return maanden;
-      }
-
-      public void setMaanden(Integer maanden) {
-          this.maanden = maanden;
-      }
-
-
-
-
       public static void factuur() throws IOException {
           GetPlan planFactory = new GetPlan();
 
@@ -44,11 +22,5 @@ import java.io.InputStreamReader;
           p.getPrijs();
           p.calculeerRekening(aantal);
       }
-
-      public static void main(String[] args) throws IOException {
-          GenereerFactuur.factuur();
-      }
-
-
   }
 

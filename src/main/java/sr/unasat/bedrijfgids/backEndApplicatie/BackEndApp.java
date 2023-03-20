@@ -1,5 +1,8 @@
 package sr.unasat.bedrijfgids.backEndApplicatie;
 
+import sr.unasat.bedrijfgids.dp_ChainofResponsibility.PaymentDemo;
+import sr.unasat.bedrijfgids.dp_composite.BetalingMedewerkers;
+import sr.unasat.bedrijfgids.dp_factory.GenereerFactuur;
 import sr.unasat.bedrijfgids.service.DataService;
 import sr.unasat.bedrijfgids.service.DummyDataService;
 
@@ -29,11 +32,14 @@ public class BackEndApp {
             System.out.print("2       Data read operation\n");
             System.out.print("3       Data update operation\n");
             System.out.print("4       Data delete operation\n");
-            System.out.print("5  [X]  CLOSE APP\n");
+            System.out.print("5       Design Patterns Chain of responsibility\n");
+            System.out.print("6       Design Patterns Composite\n");
+            System.out.print("7       Design Patterns Factory\n");
+            System.out.print("8  [X]  CLOSE APP\n");
             keuze();
             choice = input.nextInt();
         }
-        while (choice > 5);
+        while (choice > 8);
         switch (choice) {
 
             case 1:
@@ -44,7 +50,13 @@ public class BackEndApp {
                 subMenu3();
             case 4:
                 subMenu4();
-            case 5: // AFSLUITEN
+            case 5:
+                subMenu5();
+            case 6:
+                subMenu6();
+            case 7:
+                subMenu7();
+            case 8: // AFSLUITEN
                 close();
                 break;
         }
@@ -137,4 +149,69 @@ public class BackEndApp {
         }
     }
 
+    public static void subMenu5() throws InterruptedException, IOException {
+        PaymentDemo.Transactie();
+        System.out.println(">> Design Patterns Chain of responsibility successful !!!\n");
+        int choice;
+        Scanner input = new Scanner(System.in);
+        do {
+            System.out.print("-----------------------\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
+            keuze();
+            choice = input.nextInt();
+        }
+        while (choice > 2);
+        switch (choice) {
+            case 1:
+                Menu();
+            case 2:
+                close();
+
+        }
     }
+
+    public static void subMenu6() throws InterruptedException, IOException {
+        BetalingMedewerkers.Betalingen();
+        System.out.println(">> Design Patterns Composite successful !!!\n");
+        int choice;
+        Scanner input = new Scanner(System.in);
+        do {
+            System.out.print("-----------------------\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
+            keuze();
+            choice = input.nextInt();
+        }
+        while (choice > 2);
+        switch (choice) {
+            case 1:
+                Menu();
+            case 2:
+                close();
+
+        }
+    }
+    public static void subMenu7() throws InterruptedException, IOException {
+        GenereerFactuur.factuur();
+        System.out.println(">> Design Patterns Factory successful !!!\n");
+        int choice;
+        Scanner input = new Scanner(System.in);
+        do {
+            System.out.print("-----------------------\n");
+            System.out.print("1  [<]  MENU\n");
+            System.out.print("2  [X]  CLOSE APP\n");
+            keuze();
+            choice = input.nextInt();
+        }
+        while (choice > 2);
+        switch (choice) {
+            case 1:
+                Menu();
+            case 2:
+                close();
+        }
+    }
+
+
+}
