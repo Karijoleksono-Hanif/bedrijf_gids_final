@@ -8,6 +8,8 @@ import sr.unasat.bedrijfgids.repositoryDAO.BedrijfRepository;
 
 import java.util.List;
 
+import static sr.unasat.bedrijfgids.configuration.JPAConfig.entityManager;
+
 public class BedrijfService {
 
 
@@ -28,6 +30,8 @@ public class BedrijfService {
         Bedrijf bedrijf = new Bedrijf();
 
         try {
+
+
             bedrijf.setBedrijf_naam(bedrijfDTO.getBedrijf_naam());
             bedrijf.setFiliaal(bedrijfDTO.getFiliaal());
             bedrijf.setFiliaal_adress(bedrijfDTO.getFiliaal_adress());
@@ -35,7 +39,6 @@ public class BedrijfService {
             bedrijf.setTelefoon_nummer(bedrijfDTO.getTelefoon_nummer());
 
             bedrijfRepository.insertBedrijf(bedrijf);
-
 
             return bedrijf;
         } catch (Exception e) {

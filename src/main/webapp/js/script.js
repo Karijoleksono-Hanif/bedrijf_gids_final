@@ -1,7 +1,6 @@
 
 
 const apiUrl = "http://localhost:8080/bedrijfgids_war/api/bedrijven/getAll";
-
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
@@ -21,4 +20,4 @@ fetch(apiUrl)
         });
     })
     .catch(error => console.error(error));
-console.log(data);
+

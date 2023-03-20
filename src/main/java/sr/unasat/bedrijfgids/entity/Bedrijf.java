@@ -2,11 +2,18 @@ package sr.unasat.bedrijfgids.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import java.util.HashSet;
 import java.util.Set;
 
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Bedrijf {
 
